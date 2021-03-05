@@ -6,7 +6,7 @@ import fs from 'fs';
 class SendMailService {
   private client: Transporter
   constructor() {
-    nodemailer.createTestAccount().then(account => {
+    nodemailer.createTestAccount().then((account) => {
       // Create a SMTP transporter object
       const transporter = nodemailer.createTransport({
         host: account.smtp.host,

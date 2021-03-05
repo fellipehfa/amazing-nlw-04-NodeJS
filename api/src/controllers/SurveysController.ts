@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
-import { getCustomRepository } from "typeorm";
+import { getCustomRepository, Repository } from "typeorm";
+import { SoftDeleteQueryBuilder } from "typeorm/query-builder/SoftDeleteQueryBuilder";
 import { SurveysRepository } from "../repositories/SurveysRepository";
 
 class SurveysController {
